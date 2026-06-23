@@ -1,0 +1,29 @@
+{
+  "name": "auto-clear-downloads-extension",
+  "version": "1.0.0",
+  "description": "A minimal browser extension that removes each download from the downloads list after it finishes.",
+  "scripts": {
+    "lint": "web-ext lint",
+    "start": "web-ext run",
+    "build": "web-ext build --overwrite-dest"
+  },
+  "keywords": [
+    "firefox",
+    "chrome",
+    "webextension",
+    "downloads"
+  ],
+  "author": "Sander Bongers",
+  "license": "MIT",
+  "homepage": "https://github.com/sanderbongers/auto-clear-downloads-extension#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanderbongers/auto-clear-downloads-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sanderbongers/auto-clear-downloads-extension/issues"
+  },
+  "devDependencies": {
+    "web-ext": "^8.0.0"
+  }
+}

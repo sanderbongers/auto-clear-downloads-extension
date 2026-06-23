@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# web-ext build output
+web-ext-artifacts/
+
+# Signed/packaged builds
+*.zip
+*.xpi
