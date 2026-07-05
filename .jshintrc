@@ -1,0 +1,16 @@
+{
+  "esversion": 11,
+  "curly": true,
+  "quotmark": "double",
+  "browser": true,
+  "worker": true,
+  "strict": true,
+  "globalstrict": true,
+  "undef": true,
+  "unused": true,
+  "globals": {
+    "globalThis": false,
+    "browser": false,
+    "chrome": false
+  }
+}
