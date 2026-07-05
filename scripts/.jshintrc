@@ -1,0 +1,9 @@
+{
+  "esversion": 11,
+  "curly": true,
+  "quotmark": "single",
+  "node": true,
+  "strict": false,
+  "undef": true,
+  "unused": true
+}
