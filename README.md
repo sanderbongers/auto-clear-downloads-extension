@@ -15,6 +15,12 @@ Built on Manifest V3 for:
 - Firefox (Gecko 142+)
 - Chromium-based browsers (Chrome 121+)
 
+## FAQ
+
+**Another one?**
+
+Yes, all existing alternatives continuously poll the download history on a fixed timer. This one is event-driven rather than polling.
+
 ## Development
 
 ```sh
