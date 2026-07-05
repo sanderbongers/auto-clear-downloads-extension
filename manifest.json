@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Auto-clear Downloads",
-  "version": "1.0.0",
-  "description": "Removes each download from the Downloads panel after it finishes.",
+  "version": "1.1.0",
+  "description": "Removes each download from the downloads manager and history after it finishes.",
   "homepage_url": "https://github.com/sanderbongers/auto-clear-downloads-extension",
   "browser_specific_settings": {
     "gecko": {
@@ -20,7 +20,7 @@
     "96": "icons/icon.svg",
     "128": "icons/icon.svg"
   },
-  "permissions": ["downloads"],
+  "permissions": ["downloads", "history"],
   "background": {
     "service_worker": "background.js",
     "scripts": ["background.js"]

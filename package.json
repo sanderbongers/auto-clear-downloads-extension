@@ -1,7 +1,7 @@
 {
   "name": "auto-clear-downloads-extension",
-  "version": "1.0.0",
-  "description": "A minimal browser extension that removes each download from the downloads list after it finishes.",
+  "version": "1.1.0",
+  "description": "A minimal browser extension that removes each download from the downloads manager and history after it finishes.",
   "scripts": {
     "lint": "web-ext lint",
     "start": "web-ext run",
@@ -24,6 +24,8 @@
     "url": "https://github.com/sanderbongers/auto-clear-downloads-extension/issues"
   },
   "devDependencies": {
-    "web-ext": "^8.0.0"
+    "@types/chrome": "^0.2.2",
+    "@types/firefox-webext-browser": "^143.0.0",
+    "web-ext": "^10.4.0"
   }
 }
