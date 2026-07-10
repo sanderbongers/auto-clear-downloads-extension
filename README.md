@@ -2,6 +2,8 @@
 
 A minimal browser extension that removes each download from the downloads history shortly after it finishes.
 
+[**Install for Firefox**](https://addons.mozilla.org/firefox/addon/auto-clear-downloads/)
+
 ## How it works
 
 A non-persistent background script is loaded on demand to handle a `downloads.onChanged` event and unloaded while idle. When a download's state flips to `complete`, it waits a short, per-download delay for the toolbar button to show its completion animation. It then clears the download from the download list, which in the case of Firefox means: from the Downloads panel and the history in the Library window.
