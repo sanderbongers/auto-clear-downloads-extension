@@ -3,13 +3,24 @@
   "version": "1.1.0",
   "description": "A minimal browser extension that removes each download from the history after it finishes.",
   "scripts": {
-    "lint": "web-ext lint",
-    "start": "web-ext run",
     "build": "web-ext build --overwrite-dest",
-    "icons": "node scripts/render-icons.js"
+    "check": "npm run lint && npm run lint:extension && npm run format:check",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "icons": "node scripts/render-icons.js",
+    "lint": "eslint .",
+    "lint:extension": "web-ext lint",
+    "start": "web-ext run"
   },
   "webExt": {
-    "ignoreFiles": ["icons/icon.svg", "scripts"]
+    "ignoreFiles": [
+      "icons/icon.svg",
+      "scripts",
+      "package*.json",
+      "eslint.config.mjs",
+      ".editorconfig",
+      ".prettier*"
+    ]
   },
   "keywords": [
     "firefox",
@@ -28,8 +39,12 @@
     "url": "https://github.com/sanderbongers/auto-clear-downloads-extension/issues"
   },
   "devDependencies": {
+    "@eslint/js": "10.0.1",
     "@types/chrome": "^0.2.2",
     "@types/firefox-webext-browser": "^143.0.0",
+    "eslint": "10.13.0",
+    "globals": "17.13.0",
+    "prettier": "3.9.10",
     "sharp": "^0.35.3",
     "web-ext": "^10.4.0"
   }
